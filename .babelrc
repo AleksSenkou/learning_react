@@ -1,4 +1,6 @@
 {
+  "filename": ".babelerrors",
+  "highlightCode": true,
   "presets": [
     "react"
   ]
