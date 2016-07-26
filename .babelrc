@@ -2,6 +2,8 @@
   "filename": ".babelerrors",
   "highlightCode": true,
   "presets": [
-    "react"
+    "react",
+    "es2015",
+    "es2016"
   ]
 }

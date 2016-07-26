@@ -1,20 +1,20 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-var USER_DATA = {
+const USER_DATA = {
   name: 'Aleks',
   username: 'AleksSenkou',
   imageUrl: 'https://avatars0.githubusercontent.com/u/3635774?v=3&s=460'
 }
 
-var ProfilePic = React.createClass({
-  render: function () {
+let ProfilePic = React.createClass({
+  render() {
     return <img src={this.props.imageUrl} style={{height: 100, width: 100}} />
   }
 })
 
-var ProfileLink = React.createClass({
-  render: function () {
+let ProfileLink = React.createClass({
+  render() {
     return (
       <div>
         <a href={'http://www.github.com/' + this.props.username}>
@@ -25,17 +25,14 @@ var ProfileLink = React.createClass({
   }
 })
 
-var ProfileName = React.createClass({
-  render: function () {
-    return (
-      <div> {this.props.name} </div>
-    )
+let ProfileName = React.createClass({
+  render() {
+    return <div> {this.props.name} </div>
   }
 })
 
-
-var Avatar = React.createClass({
-  render: function () {
+let Avatar = React.createClass({
+  render() {
     return (
       <div>
         <ProfilePic imageUrl={this.props.user.imageUrl} />
