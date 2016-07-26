@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "node server.js"
   },
   "author": "aleks",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "babel-preset-es2016": "^6.11.3",
     "babel-preset-react": "^6.11.1",
     "html-webpack-plugin": "^2.22.0",
+    "react-hot-loader": "^1.3.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }

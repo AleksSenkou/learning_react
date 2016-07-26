@@ -1,4 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
+
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
@@ -7,6 +9,8 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: [
+    'webpack-dev-server/client?http://0.0.0.0:3000',
+    'webpack/hot/only-dev-server',
     './app/index.js'
   ],
   output: {
@@ -15,8 +19,15 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loaders: ['react-hot', 'babel-loader']
+      }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    HtmlWebpackPluginConfig
+  ]
 }
