@@ -6,13 +6,29 @@ class ProfilePic extends Component {
   }
 }
 
+let Link = React.createClass({
+  changeUrl() {
+    window.location.replace(this.props.href)
+  },
+
+  render() {
+    return (
+      <span
+        style={{color: 'blue', cursor: 'pointer'}}
+        onClick={this.changeUrl}>
+        {this.props.children}
+      </span>
+    )
+  }
+})
+
 class ProfileLink extends Component {
   render() {
     return (
       <div>
-        <a href={'http://www.github.com/' + this.props.username}>
+        <Link href={'http://www.github.com/' + this.props.username}>
           {this.props.username}
-        </a>
+        </Link>
       </div>
     )
   }
