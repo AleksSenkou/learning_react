@@ -9,4 +9,4 @@ const USER_DATA = {
   imageUrl: 'https://avatars0.githubusercontent.com/u/3635774?v=3&s=460'
 }
 
-ReactDOM.render(<Avatar user={USER_DATA} />, document.getElementById('app'));
+ReactDOM.render(routes, document.getElementById('app'));
