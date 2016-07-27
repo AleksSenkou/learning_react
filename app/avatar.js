@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class ProfilePic extends Component {
   render() {
-    return <img src={this.props.imageUrl} style={{height: 100, width: 100}} />
+    return <img src={this.props.imageUrl} style={{height: 100, width: 100}}/>
   }
 }
 
@@ -44,9 +44,9 @@ export default class Avatar extends Component {
   render() {
     return (
       <div>
-        <ProfilePic imageUrl={this.props.user.imageUrl} />
-        <ProfileName name={this.props.user.name} />
-        <ProfileLink username={this.props.user.username} />
+        <ProfilePic imageUrl={this.props.user.imageUrl}/>
+        <ProfileName name={this.props.user.name}/>
+        <ProfileLink username={this.props.user.username}/>
       </div>
     )
   }

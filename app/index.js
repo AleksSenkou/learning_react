@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Avatar from './avatar'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Avatar from './avatar';
+import routes from './config/routes';
 
 const USER_DATA = {
   name: 'Aleks',
