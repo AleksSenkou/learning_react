@@ -21,7 +21,7 @@ export default class PromptContainer extends Component {
 
     if (this.props.routeParams.playerOne) {
       this.context.router.push({
-        pathname: '/ballte',
+        pathname: '/battle',
         query: {
           playerOne: this.props.routeParams.playerOne,
           playerTwo: this.state.username
