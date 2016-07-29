@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import Prompt from '../components/prompt'
+import Prompt from '../components/Prompt'
 
 export default class PromptContainer extends Component {
   constructor(props, context) {
