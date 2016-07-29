@@ -1,10 +1,7 @@
 let styles = {
-  // transparentBg: {
-  // }
-}
-
-styles.transparentBg = {
-  background: 'transparent'
+  transparentBg: {
+    background: 'transparent'
+  }
 }
 
 export default styles
