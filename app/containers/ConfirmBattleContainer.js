@@ -23,11 +23,21 @@ export default class ConfirmBattleContainer extends Component {
       })
   }
 
+  handleInitiateBattle() {
+    this.context.router.push({
+      pathname: '/results',
+      state: {
+        playersInfo: this.state.playersInfo
+      }
+    })
+  }
+
   render() {
     return (
       <ConfirmBattle
         isLoading={this.state.isLoading}
-        playersInfo={this.state.playersInfo} />
+        playersInfo={this.state.playersInfo}
+        onInitiateBattle={this.handleInitiateBattle}/>
     );
   }
 }
