@@ -3,7 +3,13 @@
   "highlightCode": true,
   "presets": [
     "react",
+    "stage-0",
+    "stage-1",
     "es2015",
     "es2016"
+  ],
+  "plugins": [
+    "transform-es2015-arrow-functions",
+    "transform-class-properties"
   ]
 }
